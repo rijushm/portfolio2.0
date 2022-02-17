@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>Three JS Starter</title>
+</head>
+<body>
+	<header class="w-full text-white">
+		<div class="w-full px-4 md:px-8 py-4">
+			<div class="inner-header flex justify-between items-center">
+				<h2 class="text-2xl md:text-3xl font-bold">Riju.Design</h2>
+				<ul class="flex justify-center items-center gap-6">
+					<li class="text-xs md:text-md uppercase font-play"><a href="#info">About</a></li>
+					<li class="text-xs md:text-md uppercase font-play"><a href="#works">Projects</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="bottom-bar block md:hidden bg-yellow-400"></div>
+	<div class="hero-text">
+		<p class="text-xs md:text-md text-white">Design & Development</p>
+	</div>
+	<div class="socials text-white">
+		<div class="flex justify-center items-center gap-4">
+			<a href="#" class="text-xl"><ion-icon name="logo-linkedin"></ion-icon></a>
+			<a href="#" class="text-xl"><ion-icon name="logo-facebook"></ion-icon></a>
+			<a href="#" class="text-xl"><ion-icon name="logo-instagram"></ion-icon></a>
+			<a href="#" class="text-xl"><ion-icon name="logo-github"></ion-icon></a>
+			<a href="#" class="text-xl"><ion-icon name="logo-behance"></ion-icon></a>
+		</div>
+	</div>
+	<section id="hero" class="section-one w-full h-screen flex justify-center items-center relative mb-16 md:mb-0 border-b border-white">
+		<div class="inner-wrapper lg:w-1/2 flex justify-center items-center text-white flex-col">
+			<h1 class="text-center text-4xl md:text-6xl lg:text-7xl font-bold mb-4">New Dimension Design</h1>
+			<div class="md:w-2/3 lg:w-1/2 mb-8">
+				<p class="text-center px-4 md:px-0">Hi, I am Riju Sharma, a creative Web Designer based in Kolkata, India. I spent my day playing with Designing tools & try to learn new UI/UX staffs. Currently I am learning 3D & WebGL. Also I deeply take care of backend area of a website. Enjoy my little design. Happy <span>Day!</span></p>
+			</div>
+			<ul class="">
+				<li class="text-lg mb-1"><a href="#info" class="font-play">You Know Me?</a></li>
+			</ul>
+		</div>
+	</section>
+	<section id="info" class="section-two w-full h-screen flex justify-center items-center relative border-b border-white py-20 md:py-0">
+		<div class="inner-wrapper w-5/6 lg:w-3/4 text-white h-full md:border-r border-white flex justify-center items-start flex-col">
+			<h2 class="text-4xl md:text-6xl font-bold mb-6 lg:mb-12">It's all about <span class="text-yellow-400 font-play">me</span></h2>
+			<div class="w-full grid grid-cols-5 lg:grid-cols-7">
+				<div class="col-span-5">
+					<div class="grid w-full grid-cols-1 md:grid-cols-2">
+						<div class="col-span-1">
+							<div class="mb-12">
+								<h3 class="text-2xl font-bold mb-2">Academics</h3>
+								<p class="mb-1">Higher Secondary on Core Science at SHS, Kolkata (2017)</p>
+								<p>Bachelor's Degree on EE at TIB, Kolkata (2021)</p>
+							</div>
+							<div class="mb-12">
+								<h3 class="text-2xl font-bold mb-2">Skills/Tools</h3>
+								<p class="mb-1">HTML5, CSS3, Vanilla Javascipt, jQuery</p>
+								<p class="mb-1">PHP, Node JS, Mongodb</p>
+								<p class="mb-1">Adobe Photoshop, Adobe Illustrator</p>
+							</div>
+							<div class="mb-12">
+								<h3 class="text-2xl font-bold mb-2">Certificates</h3>
+								<p class="mb-1">Frontend Develoment from pirple.com</p>
+								<p class="mb-1">Digital Marketing course from Google Garage</p>
+							</div>
+						</div>
+						<div class="col-span-1">
+							<div class="mb-12">
+								<h3 class="text-2xl font-bold mb-2">Experience</h3>
+								<p class="mb-1">2 Years of experience in Web Designing</p>
+								<p class="mb-1">1+ Year of experience in Web Development</p>
+							</div>
+							<div class="mb-12">
+								<h3 class="text-2xl font-bold mb-2">Currently working at</h3>
+								<p class="mb-1">CJ&CO, Australia</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-span-2 h-full">
+					<div class="planet-gl-container opacity-50 md:opacity-100">
+						<canvas class="planet-webgl"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="w-full relative border-b border-white">
+		<div class="inner-wrapper">
+			<div class="grid grid-cols-2 md:grid-cols-7">
+				<div class="col-span-1 border-r border-white hidden md:block"></div>
+				<div class="col-span-2 md:col-span-4 bg-yellow-400 flex justify-center items-center text-white py-12 md:py-0">
+					<a href="https://www.behance.net/rijusharma1/resume">
+						<h4 class="text-4xl md:text-4xl lg:text-6xl ">Download Resume</h4>
+					</a>
+				</div>
+				<div class="col-span-2 py-12 md:py-30 border-l border-white text-4xl md:text-5xl lg:text-6xl text-white flex justify-center items-center">
+					<ion-icon name="download-outline" style="transform: translateY(2px);" class=""></ion-icon>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="txt-section" class="section-three w-full text-center py-16 md:py-32 relative border-b border-white">
+		<h2 class="text-5xl md:text-8xl uppercase">
+			<span class="block f-txt-1 text-outline font-play">Interactive</span>
+			<span class="block f-txt-2 text-yellow-400 font-play">Responsive</span>
+			<span class="block f-txt-11 text-outline font-play">Conversion Focused</span>
+			<span class="block f-txt-2 text-white font-play">SEO Checked</span>
+			<span class="block f-txt-3 text-outline font-play">Any Device</span>
+			<span class="block f-txt-4 text-white font-play">Friendly <span class="font-play text-yellow-400">Design</span></span>
+		</h2>
+	</section>
+	<section id="works" class="section-four w-full flex justify-center items-center relative border-b border-white">
+		<div class="inner-wrapper w-full lg:w-3/4 text-white">
+			<div class="w-full grid grid-cols-2 lg:grid-cols-7">
+				<div class="col-span-2 pt-12 lg:pt-20 border-b border-white lg:border-none bg-yellow-400 md:bg-transparent">
+					<h2 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-12 lg:mb-0 pl-8 md:pl-16 lg:pl-0">Recent Works</h2>
+				</div>
+				<div class="col-span-2 lg:col-span-3 py-12 md:py-32 border-l border-white pl-8 md:pl-16 lg:pl-20">
+					<div class="mb-12 md:mb-12">
+						<h4 class="text-3xl md:text-4xl font-bold mb-1">EZ-FLO USA</h4>
+						<a href="https://setup.ezfloinjection.com/" target="blank">View Project</a>
+					</div>
+					<div class="mb-12 md:mb-12">
+						<h4 class="text-3xl md:text-4xl font-bold mb-1">Care Speech Pathology</h4>
+						<a href="https://www.carespeechpathology.com.au/" target="blank">View Project</a>
+					</div>
+					<div class="mb-12 md:mb-12">
+						<h4 class="text-3xl md:text-4xl font-bold mb-1">ScopiQs</h4>
+						<a href="https://www.scopiqs.com.au/" target="blank">View Project</a>
+					</div>
+					<div class="mb-12 md:mb-12">
+						<h4 class="text-3xl md:text-4xl font-bold mb-1">SLCN</h4>
+						<a href="https://slcn.com.au/" target="blank">View Project</a>
+					</div>
+					<div class="mb-12 md:mb-12">
+						<h4 class="text-3xl md:text-4xl font-bold mb-1 cjco">CJ&CO</h4>
+						<a href="http://cjco.com.au/" target="blank">View Project</a>
+					</div>
+					<div class="mb-12 md:mb-12">
+						<h4 class="text-3xl md:text-4xl font-bold mb-1">Hi-Fi Collective</h4>
+						<a href="https://hificollective.com.au/" target="blank">View Project</a>
+					</div>
+					<div class="mb-12 md:mb-12">
+						<h4 class="text-3xl md:text-4xl font-bold mb-1">DTTW Electrical Services</h4>
+						<a href="#" target="blank">View Project</a>
+					</div>
+					<div class="mb-12 md:mb-12">
+						<h4 class="text-3xl md:text-4xl font-bold mb-1 ssj">Shyam Sundar Co Jewellers</h4>
+						<a href="https://www.shyamsundarco.com" target="blank">View Project</a>
+					</div>
+					<div class="mb-12 md:mb-12">
+						<h4 class="text-3xl md:text-4xl font-bold mb-1">AVD Group</h4>
+						<a href="https://www.avd-group.in/" target="blank">View Project</a>
+					</div>
+					<div class="mb-12 md:mb-12">
+						<h4 class="text-3xl md:text-4xl font-bold mb-1">Momoiam</h4>
+						<a href="https://momoiam.in/" target="blank">View Project</a>
+					</div>
+					<div class="">
+						<h4 class="text-3xl md:text-4xl font-bold mb-1">OFS</h4>
+						<a href="https://rijushm.github.io/ofs" target="blank">View Project</a>
+					</div>
+				</div>
+				<div class="col-span-2 h-full">
+					<div class="gallery-gl-container w-full h-full">
+						<canvas class="gallery"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="w-full relative hidden md:block">
+		<div class="inner-wrapper">
+			<div class="grid grid-cols-7">
+				<div class="col-span-1 border-r border-white"></div>
+				<div class="col-span-2 border-r border-white bg-yellow-400"></div>
+				<div class="col-span-3 border-r border-white"></div>
+				<div class="col-span-1 py-16 md:py-30 border-l border-white"></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="" class="section-five flex justify-center items-center relative border-b border-t border-white">
+		<div class="inner-wrapper w-full lg:w-3/4 text-white">
+			<div class="w-full grid grid-cols-2 lg:grid-cols-7">
+				<div class="col-span-2 pt-12 lg:pt-28 h-full lg:border-r border-white bg-yellow-400 md:bg-transparent">
+					<h2 class="text-4xl md:text-6xl lg:text-7xl font-bold pb-12 md:pb-16 border-b border-white lg:border-none pl-8 md:pl-16 lg:pl-0">Few More Websites</h2>
+				</div>
+				<div id="all-projects" class="col-span-2 lg:col-span-5 py-16 md:py-32 pl-8 md:pl-16 lg:pl-20 flex flex-wrap gap-4 md:gap-6"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="w-full relative border-b border-white">
+		<div class="inner-wrapper">
+			<div class="grid grid-cols-2 md:grid-cols-7">
+				<div class="col-span-2 md:col-span-5 py-16 md:py-30 border-r border-white flex justify-center items-center">
+					<a href="#" class="block w-full h-full text-white">
+						<div class="w-full h-full flex justify-center items-center">
+							<h4 class="text-4xl md:text-5xl pl-0 lg:pl-0">Graphic Works</h4>
+						</div>
+					</a>
+				</div>
+				<div class="col-span-2 bg-yellow-400 flex justify-center items-center py-8 md:py-0 border-t border-white md:border-none">
+					<a href="https://www.behance.net/rijusharma1">
+						<ion-icon name="arrow-forward-sharp" class="text-white text-5xl"></ion-icon>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer id="" class="section-six p-8 md:p-20 mb-40 relative">
+		<div class="inner-wrapper text-white">
+			<h3 class="text-3xl md:text-4xl lg:text-6xl font-bold mb-40">
+				<span class="block font-play mb-2">Enough Scrolling</span>
+				<span class="block font-play text-outline mb-2">Enough Scrolling</span>
+				<span class="block font-play">Enough Scrolling</span>
+			</h3>
+			<div class="w-full mb-40 flex justify-center items-center flex-col">
+				<a href="#">
+					<h2 class="text-5xl md:text-7xl text-center font-bold">Let's Talk 🚀</h2>
+				</a>
+				<a href="#" class="border-b border-white pb-1">rijushm@gmail.com</a>
+			</div>
+		</div>
+	</footer>
+
+	<canvas class="webgl"></canvas>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/2.2.1/json2html.min.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+
+	<script type="text/javascript">
+		let template = {'<>':'a','href':'${url}','html':[
+                {'<>':'div','class':'project-links font-play text-4xl lg:text-6xl','html':'${name}'}
+            ]};
+		$.ajax({
+			method: 'GET',
+			url: 'downloads/book1.json',
+			success: function(html){
+				var data = html;
+				$('#all-projects').json2html(data,template);
+			}
+		
+	        
+        })
+	</script>
+</body>
+</html>
